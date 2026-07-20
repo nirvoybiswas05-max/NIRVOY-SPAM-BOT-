@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIRVOY GAMING</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#050510;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    color:white;
+    overflow:hidden;
+    position:relative;
+}
+
+/* Particle Background */
+#particles-js{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:0;
+}
+
+/* Main Box */
+.container{
+    position:relative;
+    z-index:1;
+    width:90%;
+    max-width:380px;
+    background:#0b0b16;
+    border-radius:25px;
+    padding:40px 20px;
+    text-align:center;
+    box-shadow:
+        0 0 20px rgba(0,229,255,0.20),
+        0 0 40px rgba(0,229,255,0.15),
+        0 0 70px rgba(0,229,255,0.12),
+        0 0 100px rgba(0,229,255,0.08),
+        inset 0 0 20px rgba(0,229,255,0.05);
+}
+
+.title{
+    color:#00e5ff;
+    font-size:18px;
+    letter-spacing:4px;
+    margin-bottom:20px;
+}
+
+.subtitle{
+    font-size:42px;
+    font-weight:bold;
+    margin-bottom:40px;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    padding:18px;
+    margin-top:20px;
+    text-decoration:none;
+    border-radius:50px;
+    font-size:22px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.start{
+    background:linear-gradient(90deg,#ff0066,#ff6600);
+    color:white;
+}
+
+.owner,
+.hellogram,
+.telegram{
+    background:transparent;
+    color:#00e5ff;
+    border:3px solid #00e5ff;
+}
+
+.btn:hover{
+    transform:scale(1.03);
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<div class="container">
+
+    <div class="title">NIRVOY GAMING</div>
+    <div class="subtitle">FF SP0M BOT</div>
+
+    <a href="http://51.75.118.165:20069/Teamxcorp/Free NJ" class="btn start">
+        ▶ START SP0M
+    </a>
+    <a href="http://t.me/nirvoygamar" class="btn owner">
+        OWNER 
+    </a>
+    <a href="https://wa.me/8801734224652" class="btn hellogram">
+        HELLOGRAM
+    </a>
+    <a href="https://t.me/nirvoygamar" class="btn telegram">
+        TELEGRAM
+    </a>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 70,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    },
+    color: {
+      value: "#6a6cff"
+    },
+    shape: {
+      type: "circle"
+    },
+    opacity: {
+      value: 0.95,
+      random: true
+    },
+    size: {
+      value: 4,
+      random: true
+    },
+    line_linked: {
+      enable: true,
+      distance: 180,
+      color: "#6a6cff",
+      opacity: 0.65,
+      width: 1.5
+    },
+    move: {
+      enable: true,
+      speed: 1,
+      out_mode: "out"
+    }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: {
+        enable: true,
+        mode: "grab"
+      },
+      resize: true
+    },
+    modes: {
+      grab: {
+        distance: 180,
+        line_linked: {
+          opacity: 1
+        }
+      }
+    }
+  },
+  retina_detect: true
+});
+</script>
+
+</body>
+</html>
